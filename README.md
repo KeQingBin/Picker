@@ -6,11 +6,7 @@
 
 原生 Javascript 实现移动端 Picker 组件
 
-## 效果图：
-
-![演示图](https://raw.githubusercontent.com/mqyqingfeng/waterfall/master/demonstration.gif)
-
-源码地址：
+预览地址：
 
 [https://github.com/peng-yin/Picker](https://github.com/peng-yin/Picker)
 

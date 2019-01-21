@@ -180,7 +180,7 @@
         el: '.start-date',
         autoHide: true,
         itemHeight: 36,
-        // data: dateList,
+        data: dateList,
         onChange: res => {
             // console.log(res);
             switch (res.index) {
@@ -215,7 +215,8 @@
     })
 
     openPicker.onclick = function() {
-        $picker.data = dateList;
+        console.log(dateList)
+        // $picker.data = dateList;
         $picker.default = [2017, 1, 2];
         $picker.open();
         $picker.onConfirm = res =>  {

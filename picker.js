@@ -113,7 +113,6 @@
                 for (var i = 0;i < this.data.length;i++) {
                     var offsetNum = 0;
                     if (this.default && typeof (this.default) === 'object' && this.default[i]) {
-                        console.log(this.default[i], this.data[i])
                         var _index = getIndex(this.default[i], this.data[i]);
                         offsetNum = _index * this._height;
                         this.onInit({

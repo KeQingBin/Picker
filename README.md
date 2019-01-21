@@ -96,66 +96,57 @@ var $picker = new Picker(options);
 
 **autoHide**
 
-必填，指定瀑布流添加的区块的 selector
+选填， 自动隐藏
 
-**loader**
+**data**
 
-必填，指定瀑布流加载时的 loading 的 selector
+必填，滑动数据项
 
-**autoHide**
+**default**
 
-默认值为 `false`，pins 上下间隔的距离
+选填，初始化默认值
 
-**gapWidth**
+**evt**
 
-默认值为 `20`，pins 左右间隔的距离
+选填， 事件类型
 
-**pinWidth**
+**_height**
 
-默认值为 `216`，pins 的宽度为 216px
-
-**threshold**
-
-默认值为 `100`，当距离底部还是有 100px 的时候就开始加载
-
-### 事件绑定
-
-当需要加载新的数据时，会触发 load 事件
-
-```js
-waterfall.on("load", function(){
-    // 模拟数据加载
-    setTimeout(function(){
-        // 注意当加载新的 pins 的时候，需要调用 waterfall.append 函数
-        waterfall.append(htmlStr, selector)
-    }, 1000)
-})
-```
+选填， itemHeight高度
 
 ### 方法
 
-**append**
+**onInit**
 
-该函数传入两个参数：
+初始化方法
 
-1.htmlStr 类似于
+**onChange**
+
+滑动变化时的回调
+
+**onChangeEnd**
+
+滑动结束时的回调
+
+****
+
+结束时的回调
+### 事件绑定
+
+调用实例picker 打开方法
 
 ```js
-'<div class="pin"><img class="img"> ... </div>'
+$picker.open();
 ```
 
-需要注意每个 pin 需要添加与 options.pins 一致的类名，图片元素需要添加类名，然后作为选择符，传入第二个参数
-
-2. selector
-
-图片的选择符，以上面的例子为例，应该传入
+点击确认的方法
 
 ```js
-waterfall.append(htmlStr, '.img')
+$picker.onConfirm = res =>  {}
 ```
-
-这是为了根据选择符筛选出要加载的图片，判断所有的图片都有了高度之后，才会添加进瀑布流中。
-
-
 ## TodoList
-1. 代码测试，压缩 上传npm
+
+1. 代码测试, 打包压缩
+
+2. 上传npm， 支持npm
+

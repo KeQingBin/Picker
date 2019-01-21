@@ -128,9 +128,6 @@ var $picker = new Picker(options);
 
 滑动结束时的回调
 
-****
-
-结束时的回调
 ### 事件绑定
 
 调用实例picker 打开方法

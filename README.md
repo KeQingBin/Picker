@@ -8,7 +8,7 @@
 
 预览地址：
 
-[https://github.com/peng-yin/Picker](https://github.com/peng-yin/Picker)
+[overview]( https://peng-yin.github.io/Picker/)
 
 ## 依赖
 
